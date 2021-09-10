@@ -1,0 +1,51 @@
+_1_WelcomeMessage ==> printing a single message, without any way for us to vary in the inputs
+
+_2_WelcomeMessageByPassingBehavior ==> allowing us to pass the interface and elegantly vary the inputs
+                                       with different implementations of the message
+
+Here we're not really passing the behavior itself ,rather passing the an object/a thing which has the behavior.
+
+That takes us to think, can't we pass just an action as input argument
+
+public void greet(action){
+    action(); // executes the actions
+}
+
+Here comes Lambdas to enable us to do this exactly. Lambdas are just functions and doesn't belong to any object/class.
+
+Essentially passing the function definition as the parameter, which is very common in functional programming paradigms.
+
+
+inline values
+-------------
+
+int a=25;
+double b=5.693;
+
+As part of Object Oriented programming we have been using methods to do something.
+
+Can we assign a block of code to a variable ?
+
+Lambdas lets you treat Functions as Values.
+
+aBlockOfCode= {
+----------------------------------------------------
+----------------------------------------------------
+}
+
+greetingFunction = public void printFunction()
+{
+System.out.println("Hello World Greeting!!.");
+}
+
+-As we are writing a function which is not part of any method/class, so we can remove PUBLIC.
+-As we are assigning the block of code into a variable, variable name will be used from the point.So we can remove the method name.
+- For Lambdas, Java Compiler is smart enough to infer the return type, so we can remove return type.
+
+In addition we add " ->" symbol between signature and body.
+greetingFunction = ()-> {
+System.out.println("Hello World Greeting!!.");
+}
+
+If your block of code contains only one line, we can remove the braces.
+greetingFunction = ()-> System.out.println("Hello World Greeting!!.");

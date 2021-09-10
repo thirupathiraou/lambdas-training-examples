@@ -1,0 +1,74 @@
+Let's practice some lambda expressions.
+
+doubleFunction=  public int doubleNumber(int a){
+            return 2*a;
+}
+            ||
+            ||
+doubleFunctionlambda=  (int a)->{return 2*a;}
+------------------------------------------------------------------
+evenFunction = public boolean isEven(int a){
+                if(a%2==0)
+                {
+                return true;
+                }
+                return false;
+}
+
+                ||
+                ||
+
+evenFunction = (int a) -> {
+                        if(a%2==0)
+                        {
+                        return true;
+                        }
+                        return false;
+}
+
+----------------------------------------------------------------
+addFunction = int addSum(int a,int b,int c){
+            return a+b+c;
+}
+
+                ||
+                ||
+
+addFunction = (int a,int b,int c) -> { return a+b+c;}
+
+===> when you have only one statement in the body and it's return statement can be omitted.
+addFunction = (int a,int b,int c) -> {  a+b+c;}
+
+===> For Lambdas, Java Compiler infers the type of input parameters,so type information can be omitted.
+addFunction = (a,b,c) -> {  a+b+c;}
+
+
+------------------------------------------------------------------------------
+StringLengthFunction = public int getStringLength(String s){
+                return s.length();
+}
+
+                        ||
+                        ||
+StringLengthFunction = (s) ->{ s.length();}
+
+StringLengthFunction = s -> s.length();
+
+
+Now let's think about the type of variable which can be used to have a Lambda expression assigned(usually referred as Target type)
+
+
+Java folks made use of Interface concept to get it assigned for the back compatability reasons.
+
+For example,
+myLambdaVariable = () -> System.out.println("Hello Folks");
+
+interface MyLambda{
+ void method_name();
+}
+//Here compiler check to ensure the method inside the MyLambda interface matching with Lambda Expression
+MyLambda myLambdaVariable = () -> System.out.println("Hello Folks");
+
+//Functional Interface signature should match with Lambda Expression.
+
+Single Abstract Method interfaces are called functional interface

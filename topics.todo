@@ -1,0 +1,12 @@
+
+- Why Lambdas ?
+    - paradigm shift ,allows functional programming
+    - readable and concise code
+    - Easy API interfaces and libraries
+    - built in parallel processing
+
+- Object Oriented vs functional programming
+- Everything is Object and all code blocks associated with classes and objects
+- Demo-1/ch_1 : Passing Behavior prior to java 8
+- Demo-2/ch_2 : Passing Behavior in java 8 and later
+
