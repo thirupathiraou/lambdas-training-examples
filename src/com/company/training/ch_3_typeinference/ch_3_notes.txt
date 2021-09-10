@@ -1,0 +1,11 @@
+
+StringLengthFunction = public int getStringLength(String s){
+                return s.length();
+}
+
+                        ||
+                        ||
+StringLengthFunction = (s) ->{ s.length();}
+
+StringLengthFunction = s -> s.length();
+
