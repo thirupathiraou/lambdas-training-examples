@@ -9,4 +9,8 @@
 - Everything is Object and all code blocks associated with classes and objects
 - Demo-1/ch_1 : Passing Behavior prior to java 8
 - Demo-2/ch_2 : Passing Behavior in java 8 and later
-
+- Demo-3/ch_3 : Type Inference Example
+- Demo-4/Ch_4 : Lambdas vs interface implementation
+- Demo-5/Ch_5 : Runnable implementations using Lambdas
+- Demo-6/Ch_6 : Functional Interface Definition and Java Docs
+- Demo-7/Ch_7 : Lambdas Exercise (Home Work :) )

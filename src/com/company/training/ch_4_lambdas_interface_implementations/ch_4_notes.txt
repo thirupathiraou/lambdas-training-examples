@@ -1,0 +1,8 @@
+In chapter 2, we talked about the use interfaces instead of coming up with a new function type as Target for
+lambda expressions.
+
+Now we see the advantages .
+
+- it allows us to pass the lambdas to existing APIs without new implementation
+- backward compatibility
+

@@ -1,0 +1,11 @@
+Thread is a lightweight process. Thread consumes less resources to create and exist in the process;thread shares process resources.
+The main thread of Java is the thread that is started when the program starts.
+The slave thread is created as a result of the main thread.
+
+A thread can programmatically be created by:
+
+1.Implementing the java.lang.Runnable interface.
+2.Extending the java.lang.Thread class.
+You can create threads by implementing the runnable interface and overriding the run() method.
+Then, you can create a thread object and call the start() method.
+

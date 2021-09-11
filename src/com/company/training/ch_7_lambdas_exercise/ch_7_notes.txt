@@ -1,0 +1,1 @@
+Let's try to solve the problem using Java 7 and then Java 8
