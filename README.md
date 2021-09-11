@@ -7,3 +7,8 @@ Basics of Lambdas and illustrating example of lambdas concepts and usage.
 - What are functional Interfaces ?
 - Ease of Method References ?
 - Improvements in Collections
+
+### How to set up project in Local
+- instruction 1
+- instruction 2
+- instruction 3
