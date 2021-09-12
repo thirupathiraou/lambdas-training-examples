@@ -1,1 +1,13 @@
 Let's try to solve the problem using Java 7 and then Java 8
+
+   List<Student> studentList= Arrays.asList(
+                new Student("Kane","Walker",5),
+                new Student("Joe","Root",7),
+                new Student("Virat","Kohli",3),
+                new Student("Steve","Smith",4),
+                new Student("Rohit","Sharma",9)
+                );
+        //1. print all the student firstName
+        //2. Sort the list by firstName
+        //3. print student names whose lastName starting with "S"
+        //4. formulate a map of students with firstName as Key and their grade as Value (K,V)
