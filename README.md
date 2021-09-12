@@ -12,3 +12,8 @@ Basics of Lambdas and illustrating example of lambdas concepts and usage.
 - instruction 1
 - instruction 2
 - instruction 3
+
+### Resources
+- *https://belief-driven-design.com/functional-programming-with-java-introduction-43481e645ee*
+- *https://betterprogramming.pub/better-null-handling-with-java-optionals-4793a8566710*
+- **

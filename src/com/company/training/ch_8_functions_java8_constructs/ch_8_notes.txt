@@ -1,0 +1,17 @@
+Let's understand out of the box functional interfaces for common scenarios.
+
+Look at below method signature we used in ch7.
+
+ private static void printNamesWithConditionsMet(List<Student> students, Condition condition)
+
+ Here Condition interface is created by us, which is extra work for us to do.
+
+ Since Java folks made use of interfaces as target types,they provided some default interfaces to address this extra work.
+ All these are available in java.util.function package
+
+ https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
+
+ Predicate<T> ===> boolean test(T obj); //takes one argument and returns boolean
+ BiPredicate<T,U> ===> boolean test(T obj1,U obj2);  // takes 2 args and returns boolean
+ Supplier<T>  ===> T get(); //takes no arguments and returns an object
+ Consumer<T>  ===> void accept(T obj); //takes an argument and returns none

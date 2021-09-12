@@ -14,3 +14,9 @@
 - Demo-5/Ch_5 : Runnable implementations using Lambdas
 - Demo-6/Ch_6 : Functional Interface Definition and Java Docs
 - Demo-7/Ch_7 : Lambdas Exercise (Home Work :) )
+
+- Functional programming constructs
+    - Predicate
+    - BiPredicate
+    - Supplier
+    - Consumer
