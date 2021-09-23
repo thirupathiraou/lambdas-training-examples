@@ -20,3 +20,7 @@
     - BiPredicate
     - Supplier
     - Consumer
+    - BiConsumer
+    - Function
+    - BiFunction
+    - UnaryOperator
