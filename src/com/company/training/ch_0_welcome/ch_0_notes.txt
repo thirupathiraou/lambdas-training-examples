@@ -1,1 +1,6 @@
 Welcome to the world of functional programming in Java language.
+
+Imperative Style of programming requires us to write the logic to perform task instructing step by step
+
+Declarative Style of programming requires us to write the logic to perform task by instructing what's needed
+without worrying about the sequence of steps/implementation process too much.

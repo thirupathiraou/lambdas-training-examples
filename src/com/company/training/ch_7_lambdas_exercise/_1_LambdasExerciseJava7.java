@@ -13,8 +13,8 @@ public class _1_LambdasExerciseJava7 {
                 new Student("Steve","Smith",4),
                 new Student("Rohit","Sharma",9)
                 );
-        //1. print all the student firstName
-        //2. Sort the list by firstName
+        //1. Sort the list by firstName
+        //2. print all the student firstName
         //3. print student names whose lastName starting with "S"
         //4. formulate a map of students with firstName as Key and their grade as Value (K,V)
 
@@ -33,7 +33,8 @@ public class _1_LambdasExerciseJava7 {
         }
         System.out.println("-------------//3. print student names whose lastName starting with \"S\"--------------------");
         //we can very well do in more imperative style,but below is best possible oo way until Java 7
-        printNamesWithConditionsMet(studentList,(student -> student.getLastName().startsWith("S")));
+        Condition sc=new NameCondition();
+        printNamesWithConditionsMet(studentList,sc);
 
         System.out.println("-------------//4. formulate a map of students with firstName as Key and their grade as Value (K,V)--------------------------");
         Map<String,Integer> studentsMap=new HashMap<>();
@@ -62,3 +63,15 @@ public class _1_LambdasExerciseJava7 {
         boolean check(Student student);
     }
 }
+
+class NameCondition implements _1_LambdasExerciseJava7.Condition {
+
+    public NameCondition() {
+    }
+
+    @Override
+    public boolean check(Student student) {
+        return student.getLastName().startsWith("S");
+    }
+}
+

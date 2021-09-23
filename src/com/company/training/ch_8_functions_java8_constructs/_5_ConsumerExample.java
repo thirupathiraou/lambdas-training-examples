@@ -16,8 +16,8 @@ public class _5_ConsumerExample {
                     new Student("Rohit","Sharma",9)
             );
 
-            //1. print all the student firstName
-            //2. Sort the list by firstName
+            //1. Sort the list by firstName
+            //2. print all the student firstName
             //3. print student names whose lastName starting with "S"
             //4. formulate a map of students with firstName as Key and their grade as Value (K,V)
 
