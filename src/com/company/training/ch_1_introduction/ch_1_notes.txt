@@ -33,6 +33,12 @@ aBlockOfCode= {
 ----------------------------------------------------
 }
 
+//each function/method has 4 things
+//1. name
+//2. return type
+//3. input parameters
+//4. body
+
 greetingFunction = public void printFunction()
 {
 System.out.println("Hello World Greeting!!.");
