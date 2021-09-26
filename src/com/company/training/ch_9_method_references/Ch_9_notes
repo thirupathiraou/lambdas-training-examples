@@ -1,0 +1,32 @@
+https://stackoverflow.com/questions/24487805/lambda-expression-vs-method-reference
+
+The theory behind method refs is simple: names matter. If a method has a name, then referring to it by name, rather than by an imperative bag of code
+that ultimately just turns around and invokes it, is often (but not always!) more clear and readable.
+
+No Right Answer over
+
+- "always use a method ref instead of a lambda"
+                or
+- "always use a lambda instead of a method ref" should be ignored.
+
+
+The Java Lambda expressions allow us to define an anonymous method and treat it as an instance of functional interface.
+Similarly, the Method references allow us to do the same thing, but with the existing methods.
+Also, the Method References are similar to Lambda expressions, that they require a target type.
+But instead of providing implementation of a method, they refer to a method of an existing class or object.
+
+
+ *  - parameter as an argument to instance method(Instance method reference of a particular object)
+ *  - parameter as an argument to static method(Static method reference)
+ *  - parameter as a target(Instance method reference of an arbitrary object of a particular type)
+ *  - two parameters as arguments
+ *  - two parameters , one as target the other as argument
+ *
+ *  Method References has two Limitations
+ *  1. if you are doing any manipulation of the data
+ *  2. if there is conflict method between instance method and static method.
+
+
+
+
+Constructor Reference is used to refer to a constructor without instantiating the named class.
