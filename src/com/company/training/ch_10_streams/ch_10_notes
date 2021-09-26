@@ -1,0 +1,33 @@
+Intermediate Operations - Types
+
+-stateless operations
+-stateful operations
+
+Stateless operations, such as filter and map, retain no state from previously seen element when processing
+a new element. Each element can be processed independent of operations on other elements.
+
+Stateful operations, such as distinct and sorted, may incorporate state from previously seen elements when
+processing new elements.
+
+
+Terminal operations may traverse the stream to produce a result or a side-effect.
+
+After the terminal operation is performed, the stream pipeline is considered consumed, and can no longer be used.
+
+Terminal operations are eager, completing their traversal of the data source and processing of the pipeline before returning
+
+Few examples for terminal operation
+
+forEach(), collect(), match(), count() and reduce()
+
+
+Parallel Streams
+All streams operations can execute either in serial or in parallel.
+The stream implementations in the JDK create serial streams unless parallelism is explicitly requested.
+
+Challenges using Parallel stream
+Collections are not thread-safe, which means that multiple threads cannot manipulate a collection without introducing
+thread interference or memory consistency errors.
+
+Aggregate operations and parallel streams enable you to implement parallelism with non-thread-safe collections
+provided that you do not modify the collection while you are operating on it.
