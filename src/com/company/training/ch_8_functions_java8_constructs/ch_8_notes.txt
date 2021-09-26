@@ -3,6 +3,8 @@ Let's understand out of the box functional interfaces for common scenarios.
 Look at below method signature we used in ch7.
 
  private static void printNamesWithConditionsMet(List<Student> students, Condition condition)
+ //com.company.training.ch_7_lambdas_exercise._2_LambdasExerciseJava8.printNamesWithConditionsMet
+
 
  Here Condition interface is created by us, which is extra work for us to do.
 
@@ -15,3 +17,6 @@ Look at below method signature we used in ch7.
  BiPredicate<T,U> ===> boolean test(T obj1,U obj2);  // takes 2 args and returns boolean
  Supplier<T>  ===> T get(); //takes no arguments and returns an object
  Consumer<T>  ===> void accept(T obj); //takes an argument and returns none
+ BiConsumer<T,U> ==> void accept(T obj1,U obj2); // takes 2 args and returns none
+ Function<T,R> ==> R apply(T obj); // takes an argument and returns an object
+ BiFunction<T,U,R> ==> R apply(T obj1,U obj2); // takes 2 args and returns an object
